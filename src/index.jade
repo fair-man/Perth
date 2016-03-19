@@ -9,35 +9,106 @@ html(lang="en")
             header.header
                 .container
                     .row
+                        .col-lg-11
+                            a.header__logotype(href="#")
+                                img(src="images/logotype.png")
+                        .col-lg-1.header__open-menu
+                            i.icon.icon-menu.js-open-menu
+            section.customer-block
+                .container
+                    .row
                         .col-lg-12
-                            a.header__title(href="https://github.com/fair-man/GruntProjectTemplate") Grunt Project Template
-                            p.header__description Шаблон верстальщика для быстрого старта
-            main.main
-                .main__description
-                    .container
-                        .row
-                            .col-lg-12
-                                h3.main__desctiption-title что включено
-                                p Инструменты:
-                                ul.main__description-list
-                                    li.main__description-list_item grunt - сам Grunt.js
-                                    li.main__description-list_item grunt-contrib-jade - шаблонизатор Jade и препроцессор HTML
-                                    li.main__description-list_item grunt-contrib-imagemin - сжатие картинок
-                                    li.main__description-list_item grunt-spritesmith - генерация спрайтов
-                                    li.main__description-list_item grunt-contrib-less - препроцессор LESS
-                                    li.main__description-list_item grunt-contrib-cssmin - минификация CSS
-                                    li.main__description-list_item grunt-contrib-concat - сборка JS
-                                    li.main__description-list_item grunt-contrib-uglify - минификация JS
-                                    li.main__description-list_item grunt-contrib-watch - слежение за проектом при разработке
-                                    li.main__description-list_item grunt-contrib-connect - локальный сервер
-                                p Фреймворки и библиотеки:
-                                ul.main__description-list
-                                    li.main__description-list_item Jquery
-                                    li.main__description-list_item Bootstrap 3
-                                    li.main__description-list_item Html5shiv
-                                    li.main__description-list_item Respond
-    script(src="js/jquery.min.js")
-    script(src="js/html5shiv.min.js")
-    script(src="js/respond.min.js")
-    script(src="js/bootstrap.min.js")
-    script(src="js/app.min.js")
+                            h1.customer-block__title Meet Perth,
+                            span.customer-block__description A stupidly simple, flat PSD. Oh yeah, it’s
+                                span.description_bold-italic free
+                                | too!
+                            a.btn-custom(href="#") download
+                                i.icon.icon-download-cloud
+            section.about-block
+                .container
+                    .row
+                        .col-lg-7
+                            h2.title-block A Longwinded Header
+                            p.description-block She'll be right paddock how lets throw a ciggies. She'll be right ute to
+                                 | built like a doovalacky. We're going rack off bloody she'll be right pash.
+                                 | You little ripper tucker also get a dog up ya greenie.
+                            p.description-block.text-italic.border-left You little ripper boozer no worries she'll be
+                                 | right holy dooley!. Come a freo also as cross as a your shout. Lets throw a khe sanh
+                                 | flamin dead dingo's donger. Lets get some fisho with grab us a trackie dacks.
+                            a.btn-custom.btn-custom-green(href="#") say hello
+                                i.icon.icon-mail-alt
+            section.portfolio-block
+                .container
+                    .row
+                        .col-lg-5.pull-right
+                            h2.title-block Get a Dog Up Ya’
+                            p.description-block.text-bold-italic She'll be right paddock how lets throw a ciggies.
+                                | She'll be right ute to built like a doovalacky.
+                            p.description-block We're going rack off bloody she'll be right pash. You
+                                | little ripper tucker also get a dog up ya greenie.
+                            a.btn-custom.btn-custom-red(href="") VIEW ON DRIBBBLE
+                                i.icon.icon-dribbble
+            .green-block
+                .container
+                    .col-lg-12
+                        h1.title-block Like What You See?
+                        a.btn-custom(href="#") BUY ME A BEER?
+                            i.icon.icon-beer
+            .contact-block
+                .container
+                    .row
+                        .col-lg-12
+                            ul.contact-block__contact-list
+                                li.contact-list__item
+                                    a.contact-list__item-link(href="#")
+                                        i.icon.icon-dribbble
+                                li.contact-list__item
+                                    a.contact-list__item-link(href="#")
+                                        i.icon.icon-facebook
+                                li.contact-list__item
+                                    a.contact-list__item-link(href="#")
+                                        i.icon.icon-twitter
+                                li.contact-list__item
+                                    a.contact-list__item-link(href="#")
+                                        i.icon.icon-parer-plane
+                    .row
+                        .col-lg-12
+                            span.subsctiption-text Newsletter Subscription
+                            span.subsctiption-block
+                                input.subsctiption-field(type="text" placeholder="Enter email")
+                                button.subsctiption-button(type="submit" value="")
+                                    i.icon.icon-mail-alt
+        footer.footer
+            .container
+                .row
+                    .col-lg-12
+                        span.cotyright-block
+                            i.icon.icon-copyright
+                            | 2013
+                            span.text-blue
+                              |  Perth.
+                            span.text-italic
+                              | Breeding pixels since the naughties.
+
+        .menu-block
+             ul.menu-block__list
+                 li.list__item
+                     i.icon.icon-home
+                     a.list__item-link(href="#") home
+                 li.list__item
+                     i.icon.icon-heart-empty
+                     a.list__item-link(href="#") about me
+                 li.list__item
+                     i.icon.icon-monitor
+                     a.list__item-link(href="#") portfolio
+                 li.list__item
+                     i.icon.icon-mail-alt
+                     a.list__item-link(href="#") drop me a line
+             i.icon.icon-close.js-open-menu
+
+
+    script(defer src="js/jquery.min.js")
+    script(defer src="js/html5shiv.min.js")
+    script(defer src="js/respond.min.js")
+    script(defer src="js/bootstrap.min.js")
+    script(defer src="js/app.min.js")

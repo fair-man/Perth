@@ -1,0 +1,61 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #545454;
+  font-family: "ProximaNova-Light";
+}
+p,
+span {
+  color: #7e7e7e;
+  font-family: "ProximaNova-Regular";
+}
+.btn-custom {
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 57px;
+  line-height: 5.7rem;
+  height: 57px;
+  padding-right: 28px;
+  padding-left: 28px;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.btn-custom .icon {
+  margin-left: 9px;
+}
+.btn-custom:hover {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  color: inherit;
+  text-decoration: none;
+}
+.btn-custom-green {
+  border-color: #14af8f;
+  color: #14af8f;
+  margin-top: 40px;
+}
+.btn-custom-green .icon {
+  font-size: 16px;
+  font-size: 1.6rem;
+  position: relative;
+  top: -1px;
+}
+.btn-custom-green:hover {
+  color: #14af8f;
+}
+.btn-custom-red {
+  border-color: #ea4c89;
+  color: #ea4c89;
+  margin-top: 30px;
+}
+.btn-custom-red:hover {
+  color: #ea4c89;
+}
