@@ -1,23 +1,24 @@
 doctype html
 html(lang="en")
     head
-        title= GruntProjectTemplate
+        title Mett Peth
         script(src="http://localhost:35729/livereload.js")
         link( rel="stylesheet" href="css/style.min.css")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
     body
         .wrapper
             header.header
                 .container
                     .row
-                        .col-lg-11
+                        .col-lg-11.col-md-11.col-sm-6.col-xs-6
                             a.header__logotype(href="#")
                                 img(src="images/logotype.png")
-                        .col-lg-1.header__open-menu
+                        .col-lg-1.col-md-1.col-sm-6.col-xs-6.header__open-menu
                             i.icon.icon-menu.js-open-menu
             section.customer-block
                 .container
                     .row
-                        .col-lg-12
+                        .col-lg-12.col-md-12.col-sm-12.col-xs-12
                             h1.customer-block__title Meet Perth,
                             span.customer-block__description A stupidly simple, flat PSD. Oh yeah, it’s
                                 span.description_bold-italic free
@@ -27,7 +28,7 @@ html(lang="en")
             section.about-block
                 .container
                     .row
-                        .col-lg-7
+                        .col-lg-7.col-md-7.col-sm-6.col-xs-12
                             h2.title-block A Longwinded Header
                             p.description-block She'll be right paddock how lets throw a ciggies. She'll be right ute to
                                  | built like a doovalacky. We're going rack off bloody she'll be right pash.
@@ -40,7 +41,7 @@ html(lang="en")
             section.portfolio-block
                 .container
                     .row
-                        .col-lg-5.pull-right
+                        .col-lg-5.col-md-5.col-sm-12.col-xs-12.pull-right
                             h2.title-block Get a Dog Up Ya’
                             p.description-block.text-bold-italic She'll be right paddock how lets throw a ciggies.
                                 | She'll be right ute to built like a doovalacky.
@@ -50,14 +51,15 @@ html(lang="en")
                                 i.icon.icon-dribbble
             .green-block
                 .container
-                    .col-lg-12
-                        h1.title-block Like What You See?
-                        a.btn-custom(href="#") BUY ME A BEER?
-                            i.icon.icon-beer
+                    .row
+                        .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                            h1.title-block Like What You See?
+                            a.btn-custom(href="#") BUY ME A BEER?
+                                i.icon.icon-beer
             .contact-block
                 .container
                     .row
-                        .col-lg-12
+                        .col-lg-12.col-md-12.col-sm-12.col-xs-12
                             ul.contact-block__contact-list
                                 li.contact-list__item
                                     a.contact-list__item-link(href="#")
@@ -72,7 +74,7 @@ html(lang="en")
                                     a.contact-list__item-link(href="#")
                                         i.icon.icon-parer-plane
                     .row
-                        .col-lg-12
+                        .col-lg-12.col-md-12.col-sm-12.col-xs-12
                             span.subsctiption-text Newsletter Subscription
                             span.subsctiption-block
                                 input.subsctiption-field(type="text" placeholder="Enter email")
@@ -81,7 +83,7 @@ html(lang="en")
         footer.footer
             .container
                 .row
-                    .col-lg-12
+                    .col-lg-12.col-md-12.col-sm-12.col-xs-12
                         span.cotyright-block
                             i.icon.icon-copyright
                             | 2013
@@ -91,20 +93,23 @@ html(lang="en")
                               | Breeding pixels since the naughties.
 
         .menu-block
-             ul.menu-block__list
-                 li.list__item
-                     i.icon.icon-home
-                     a.list__item-link(href="#") home
-                 li.list__item
-                     i.icon.icon-heart-empty
-                     a.list__item-link(href="#") about me
-                 li.list__item
-                     i.icon.icon-monitor
-                     a.list__item-link(href="#") portfolio
-                 li.list__item
-                     i.icon.icon-mail-alt
-                     a.list__item-link(href="#") drop me a line
-             i.icon.icon-close.js-open-menu
+            .container
+                .row
+                    .col-lg-12
+                        i.icon.icon-close.js-open-menu
+            ul.menu-block__list
+                li.list__item
+                    i.icon.icon-home
+                    a.list__item-link(href="#") home
+                li.list__item
+                    i.icon.icon-heart-empty
+                    a.list__item-link(href="#") about me
+                li.list__item
+                    i.icon.icon-monitor
+                    a.list__item-link(href="#") portfolio
+                li.list__item
+                    i.icon.icon-mail-alt
+                    a.list__item-link(href="#") drop me a line
 
 
     script(defer src="js/jquery.min.js")

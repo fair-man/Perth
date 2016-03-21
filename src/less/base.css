@@ -7691,12 +7691,14 @@ span {
 }
 html {
   font-size: 62.7%;
+  overflow-x: hidden;
 }
 .container {
-  width: 960px;
+  max-width: 960px;
+  min-width: 320px;
   margin: 0 auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .header {
   line-height: 100px;
@@ -7733,14 +7735,21 @@ html {
   width: 100%;
   z-index: 11;
 }
+.menu-block .col-lg-12 {
+  text-align: right;
+}
 .menu-block .icon-close {
   font-size: 22px;
   font-size: 2.2rem;
   color: #ffffff;
-  position: absolute;
-  top: 35px;
-  right: 163px;
   cursor: pointer;
+  margin-top: 35px;
+  display: inline-block;
+}
+@media screen and (max-width: 992px) {
+  .menu-block {
+    height: 100%;
+  }
 }
 .menu-block__list {
   width: 200px;
@@ -7787,6 +7796,10 @@ html {
   padding-bottom: 190px;
   position: relative;
 }
+.customer-block .row {
+  position: relative;
+  z-index: 10;
+}
 .customer-block .container {
   position: relative;
 }
@@ -7797,7 +7810,11 @@ html {
   background: url(/images/iphone.png) no-repeat;
   position: absolute;
   left: 70px;
-  bottom: -208px;
+}
+@media screen and (max-width: 992px) {
+  .customer-block {
+    padding-top: 150px;
+  }
 }
 .customer-block__title {
   font-size: 70px;
@@ -7806,6 +7823,12 @@ html {
   line-height: 2.5rem;
   font-family: "BlackJackRegular";
   color: #ffffff;
+}
+@media screen and (max-width: 992px) {
+  .customer-block__title {
+    font-size: 55px;
+    font-size: 5.5rem;
+  }
 }
 .customer-block__description {
   font-size: 35px;
@@ -7816,6 +7839,12 @@ html {
   margin-bottom: 35px;
   display: block;
   color: #ffffff;
+}
+@media screen and (max-width: 992px) {
+  .customer-block__description {
+    font-size: 26px;
+    font-size: 2.6rem;
+  }
 }
 .description_bold-italic {
   font-family: "ProximaNova-BoldIt";
@@ -7833,10 +7862,25 @@ html {
   width: 339px;
   height: 499px;
   content: "";
-  background: url(/images/ipad.png);
+  background: url(/images/ipad.png) no-repeat;
   position: absolute;
   bottom: 0;
   right: 0;
+}
+@media screen and (max-width: 992px) {
+  .about-block .container {
+    position: relative;
+    z-index: 10;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-block {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .about-block:after {
+    display: none;
+  }
 }
 .title-block {
   font-size: 40px;
@@ -7844,6 +7888,12 @@ html {
   line-height: 25px;
   line-height: 2.5rem;
   margin-bottom: 35px;
+}
+@media screen and (max-width: 480px) {
+  .title-block {
+    font-size: 30px;
+    font-size: 3rem;
+  }
 }
 .description-block,
 .text-italic {
@@ -7875,10 +7925,32 @@ html {
   width: 758px;
   height: 366px;
   content: "";
-  background: url(/images/devices.png);
+  background: url(/images/devices.png) no-repeat;
   position: absolute;
   bottom: 0;
   left: 0;
+}
+@media screen and (max-width: 992px) {
+  .portfolio-block {
+    padding-bottom: 410px;
+  }
+  .portfolio-block:before {
+    width: 100%;
+    height: 366px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .portfolio-block {
+    padding-top: 60px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .portfolio-block {
+    padding-bottom: 60px;
+  }
+  .portfolio-block:before {
+    display: none;
+  }
 }
 .green-block {
   padding-top: 75px;
@@ -7891,16 +7963,39 @@ html {
   color: #ffffff;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 768px) {
+  .green-block {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 .contact-block {
   text-align: center;
   background-color: #f4f4f4;
   padding-top: 240px;
   padding-bottom: 240px;
 }
+@media screen and (max-width: 768px) {
+  .contact-block {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 .contact-block__contact-list {
   line-height: 50px;
   line-height: 5rem;
   margin-bottom: 65px;
+}
+@media screen and (max-width: 768px) {
+  .contact-block__contact-list {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contact-block__contact-list {
+    line-height: 35px;
+    line-height: 3.5rem;
+  }
 }
 .contact-list__item {
   list-style-type: none;
@@ -7908,6 +8003,12 @@ html {
   margin-left: 17px;
   margin-right: 17px;
   text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .contact-list__item {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 }
 .contact-list__item-link {
   font-size: 15px;
@@ -7934,6 +8035,12 @@ html {
   -ms-transform: rotate(360deg);
   transform: rotate(360deg);
 }
+@media screen and (max-width: 480px) {
+  .contact-list__item-link {
+    width: 40px;
+    height: 40px;
+  }
+}
 .subsctiption-text {
   font-size: 16px;
   font-size: 1.6rem;
@@ -7949,8 +8056,6 @@ html {
   height: 45px;
   font-size: 14px;
   font-size: 1.4rem;
-  line-height: 45px;
-  line-height: 4.5rem;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   border-radius: 7px;

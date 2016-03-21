@@ -6,13 +6,15 @@
 
 html {
   font-size: 62.7%;
+  overflow-x: hidden;
 }
 
 .container {
-  width: 960px;
+  max-width: 960px;
+  min-width: 320px;
   margin: 0 auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .header {
@@ -57,14 +59,21 @@ html {
   width: 100%;
   z-index: 11;
 
+  .col-lg-12 {
+    text-align: right;
+  }
+
   .icon-close {
     .font-size(22);
 
     color: @color-white;
-    position: absolute;
-    top: 35px;
-    right: 163px;
     cursor: pointer;
+    margin-top: 35px;
+    display: inline-block;
+  }
+
+  @media screen and (max-width: @screen-md) {
+    height: 100%;
   }
 }
 
@@ -117,6 +126,11 @@ html {
   padding-bottom: 190px;
   position: relative;
 
+  .row {
+    position: relative;
+    z-index: 10;
+  }
+
   .container {
     position: relative;
 
@@ -127,9 +141,14 @@ html {
       background: url(/images/iphone.png) no-repeat;
       position: absolute;
       left: 70px;
-      bottom: -208px;
+      //bottom: -208px;
     }
   }
+
+  @media screen and (max-width: @screen-md) {
+    padding-top: 150px;
+  }
+
 }
 
 .customer-block__title {
@@ -138,6 +157,10 @@ html {
 
   font-family: @font-blackjackregular;
   color: @color-white;
+
+  @media screen and (max-width: @screen-md) {
+    .font-size(55);
+  }
 }
 
 .customer-block__description {
@@ -148,6 +171,10 @@ html {
   margin-bottom: 35px;
   display: block;
   color: @color-white;
+
+  @media screen and (max-width: @screen-md) {
+    .font-size(26);
+  }
 }
 
 .description_bold-italic {
@@ -167,11 +194,28 @@ html {
     .size(339px, 499px);
 
     content: "";
-    background: url(/images/ipad.png);
+    background: url(/images/ipad.png) no-repeat;
     position: absolute;
     bottom: 0;
     right: 0;
   }
+
+  @media screen and (max-width: @screen-md) {
+    .container {
+      position: relative;
+      z-index: 10;
+    }
+  }
+
+  @media screen and (max-width: @screen-sm) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &:after {
+      display: none;
+    }
+  }
+
 }
 
 .title-block {
@@ -179,6 +223,10 @@ html {
   .line-height(25);
 
   margin-bottom: 35px;
+
+  @media screen and (max-width: @screen-xs) {
+    .font-size(30)
+  }
 }
 
 .description-block,
@@ -215,10 +263,30 @@ html {
     .size(758px, 366px);
 
     content: "";
-    background: url(/images/devices.png);
+    background: url(/images/devices.png) no-repeat;
     position: absolute;
     bottom: 0;
     left: 0;
+  }
+
+  @media screen and (max-width: @screen-md) {
+    padding-bottom: 410px;
+
+      &:before {
+        .size(100%, 366px);
+      }
+  }
+
+  @media screen and (max-width: @screen-sm) {
+    padding-top: 60px;
+  }
+
+  @media screen and (max-width: @screen-xs) {
+    padding-bottom: 60px;
+
+    &:before {
+      display: none;
+    }
   }
 }
 
@@ -233,6 +301,11 @@ html {
     color: @color-white;
     margin-bottom: 20px;
   }
+
+  @media screen and (max-width: @screen-sm) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .contact-block {
@@ -240,12 +313,25 @@ html {
   background-color: @color-grey-light;
   padding-top: 240px;
   padding-bottom: 240px;
+
+  @media screen and (max-width: @screen-sm) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .contact-block__contact-list {
   .line-height(50);
 
   margin-bottom: 65px;
+
+  @media screen and (max-width: @screen-sm) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: @screen-xs) {
+    .line-height(35);
+  }
 }
 
 .contact-list__item {
@@ -254,6 +340,11 @@ html {
   margin-left: 17px;
   margin-right: 17px;
   text-align: center;
+
+  @media screen and (max-width: @screen-xs) {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 }
 
 .contact-list__item-link {
@@ -275,6 +366,10 @@ html {
       }
     }
   }
+
+  @media screen and (max-width: @screen-xs) {
+    .size(40px, 40px);
+  }
 }
 
 .subsctiption-text{
@@ -291,7 +386,7 @@ html {
 .subsctiption-field {
   .size(220px, 45px);
   .font-size(14);
-  .line-height(45);
+  //.line-height(45);
   .border-radius(7px);
   .placeholder(@color-placeholder);
 
